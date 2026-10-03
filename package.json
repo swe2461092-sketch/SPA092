@@ -1,17 +1,29 @@
 {
-  "name": "user",
+  "name": "spa092",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src092/scss/main.scss src092/css/main.css"
+    "sass": "sass --watch --quiet src092/scss/main.scss src092/css/main.css",
+    "generate:images": "node src092/tools/generate-images-json.mjs",
+    "build": "sass --quiet src092/scss/main.scss src092/css/main.css",
+    "dev": "npm run build && live-server",
+    "start": "live-server src092"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
+  "type": "module",
+  "dependencies": {
     "bulma": "^1.0.4",
-    "sass": "^1.104.1"
-  }
+    "sass": "^1.99.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swe2461092-sketch/SPA092.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swe2461092-sketch/SPA092/issues"
+  },
+  "homepage": "https://github.com/swe2461092-sketch/SPA092#readme"
 }
