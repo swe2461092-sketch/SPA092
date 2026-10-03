@@ -15,11 +15,19 @@ function ensureDirectoryExists(dirPath) {
 function isImageFile(fileName) {
   return /\.(jpg|jpeg|png|webp)$/i.test(fileName);
 }
-
+// Зургийн нэрнээс food_code-г салгаж авах функц
 function extractFoodCode(fileName) {
-  // 01_0106_001.jpg -> 01_0106
+  // 1. Хэрэв стандарт зааврын дагуу 01_0106_001.jpg гэсэн нэртэй бол:
   const match = fileName.match(/^(\d{2}_\d{4})_\d{3}\.(jpg|jpeg|png|webp)$/i);
-  return match ? match[1] : null;
+  if (match) return match[1];
+
+  // 2. Хэрэв 1.jpg, 2.jpg, 3.jpg гэсэн нэртэй бол:
+  // (Жишээ нь эдгээр зургуудыг "01_0106" кодолсон хүнсэнд зааж өгөх)
+  if (/^[0-9]+\.(jpg|jpeg|png|webp)$/i.test(fileName)) {
+    return "01_0106"; // Үүнийг өөрийн зураг харгалзах food_code-оор солино
+  }
+
+  return null;
 }
 
 function buildImageMap(files) {
