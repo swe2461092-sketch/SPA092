@@ -6,7 +6,7 @@ export const translations = {
       calculation: "Тооцоолуур",
       books: "Ном",
       contact: "Холбоо барих",
-      language: "EN",
+      language: "JP", // MN дээр байхад дарахад JP руу шилжих (эсвэл дараагийн хэл)
       brandSpan: "Монголын",
       brand: "хүнсний найрлагын мэдээллийн сан",
     },
@@ -29,6 +29,23 @@ export const translations = {
     overview: {
       title: "Overview",
       welcome: "Welcome to the overview page.",
+    },
+  },
+  ja: {
+    // Түлхүүр үгийг 'jp' гэхээсээ илүү ISO стандарт дагуу 'ja' гэж нэрлэх нь илүү тохиромжтой
+    nav: {
+      overview: "概要",
+      search: "検索",
+      calculation: "計算ツール",
+      books: "書籍",
+      contact: "お問い合わせ",
+      language: "EN",
+      brandSpan: "モンゴル",
+      brand: "食品成分データベース",
+    },
+    overview: {
+      title: "概要",
+      welcome: "概要ページへようこそ。",
     },
   },
 };

@@ -1,4 +1,4 @@
-import { t, toggleLanguage } from "../i18n/i18n.js";
+import { toggleLanguage, t } from "../i18n/i18n.js";
 
 export function renderNavbar() {
   return `
