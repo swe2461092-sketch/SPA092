@@ -1,6 +1,6 @@
 import { loadMapSvg, getFoodsByProvince } from "../services/mapService.js";
 import { openModal, renderModalFoodList } from "./infoModal.js";
-import { t } from "../../i18n/i18n.js";
+import { t } from "../i18n/i18n.js";
 
 // Газрын зургийн HTML хэсгийг дүрслэх
 export function renderMap() {
