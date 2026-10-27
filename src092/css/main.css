@@ -22809,6 +22809,45 @@ has-background-danger.is-hoverable:active {
   margin-bottom: 2.5rem;
 }
 
+.image-count-tag {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border-radius: 999px;
+}
+.image-count-tag:hover {
+  background-color: rgb(14.3333333333%, 57.3333333333%, 38.3333333333%);
+}
+
+#imageModal .modal-card {
+  width: 640px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+#imageModal .modal-card-head {
+  padding: 1.2rem 1.5rem;
+}
+#imageModal .modal-card-body {
+  padding: 1.5rem;
+}
+#imageModal #slideshowImage {
+  max-height: 52vh;
+  width: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.zoomable-image {
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+  transform-origin: center center;
+  user-select: none;
+}
+
+#fullscreenBtn {
+  border: none;
+}
+
 .map-wrap {
   width: 100%;
   overflow: hidden;
